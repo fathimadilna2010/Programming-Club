@@ -1,0 +1,64 @@
+.about-achievements {
+    margin-top: 3rem;
+}
+.about-achievements-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+}
+.about-achievements-right > p {
+    margin: 1.6rem 0 2.5rem;
+}
+.achievement-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+.achievement-card {
+    background: var(--card-color);
+    padding: 1.6rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: var(--transition);
+}
+.achievement-card:hover {
+    background: var(--color-card-course);
+    box-shadow: 0 0.5rem 2rem rgba(255, 255, 255, 0.3);
+}
+.achievement-icon {
+    padding: 0.6rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+.achievement-card p {
+    margin-top: 1rem;
+}
+
+/*=================================Media Queries (Tablets)===================================*/
+
+@media screen and (max-width: 1024px) {
+    .about-achievements {
+        margin-top: 2rem;
+    }
+    .about-achievements-container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+    .about-achievements-left {
+        width: 80%;
+        margin: 0 auto;
+
+    }
+    
+}
+
+/*=================================Media Queries (Mobiles)===================================*/
+
+@media screen and (max-width: 600px) {
+    .achievement-cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+}
